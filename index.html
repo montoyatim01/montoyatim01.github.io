@@ -1,10 +1,101 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Timothy Montoya Github Pages</title>
-	</head>
-	<body>
-		<h1>Timothy Montoya</h1>
-		<p><img src="img/1.png" alt="Waterfall" /></p>
-	</body>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Behind the Front Page of the Internet</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="wrap">
+
+
+
+      <section class="article">
+          <h3>Behind the Front Page of the Internet</h3>
+          <p>
+            Reddit.com is the number one social news sharing site in the world,
+            nicknamed “The front page of the internet”. They boast over 6 billion page views a month,
+            and maintain 174 million unique visitors.
+            It takes a lot to maintain and upkeep that kind of viewership.
+          </p>
+
+          <p>
+            So what kind of system does the front page of the internet run on?
+            Between the site’s launch in 2005, and late 2009, the site ran off
+            10-15 in-house servers, with a majority of the big data being stored
+            with Amazon S3. Due to the rise in popularity of the website, in 2008
+            they made the decision to start moving some of their processing to Amazon
+            EC2 to free up processing time. They were satisfied enough with the way things
+            were working, that they decided to move the entire website over to Amazon EC2, in 2009.
+          </p>
+
+          <p>
+            Because of the nature of virtual computing in the cloud, websites like Reddit.com
+            don’t have to spend a fortune in physical servers and upkeep, as well as having backup servers,
+            and servers on reserve for when there is a traffic spike. They can just fire up a new instance
+            within minutes to help handle the load, and they only pay for what they use.
+          </p>
+
+          <p>
+            In August of 2012, Reddit hosted an IAmA with Barack Obama.
+            In preparation for the event, they launched 30 server instances to
+            help handle the load. During the actual event, the traffic was so
+            immense that they had to launch another 30 server instances to further
+            help the traffic load. A feat that took a mere 10 minutes to accomplish.
+          </p>
+
+          <p>
+            As of  2012, the site was running off of 240 EC2 instances,
+            with a custom flavor of Ubuntu. They run nginx web server,
+            and the back end of the site is coded in Python. They use Amazon
+            Cloud Search to fulfill their search queries, and they store logos and thumbnails on S3.
+          </p>
+
+
+
+
+      </section>
+
+          <p class="sources">
+              Sources:
+            </br>
+            <a href="http://www.quora.com/What-is-Reddits-technology-stack">http://www.quora.com/What-is-Reddits-technology-stack</a>
+          </br><a href="http://builtwith.com/reddit.com">http://builtwith.com/reddit.com</a>
+        </br><a href="http://www.redditblog.com/2009/11/moving-to-cloud.html">http://www.redditblog.com/2009/11/moving-to-cloud.html</a>
+            <a href="http://www.reddit.com/r/IAmA/comments/a2zte/i_run_reddits_servers_and_do_a_bunch_of_other/">http://www.reddit.com/r/IAmA/comments/a2zte/i_run_reddits_servers_and_do_a_bunch_of_other/</a>
+            <a href="https://github.com/reddit/reddit/#Whattechnologydoesreddituse">https://github.com/reddit/reddit/#Whattechnologydoesreddituse</a>
+            <a href="http://en.wikipedia.org/wiki/Reddit#Technology">http://en.wikipedia.org/wiki/Reddit#Technology</a>
+          </br>  <a href="http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html">http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html</a>
+              </p>
+
+        </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
 </html>
